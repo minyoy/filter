@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Yeonsung';
+    src: url('./YeonSung-Regular.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.objects{
+    overflow-y: scroll;
+    padding-left: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: none;
+    float: left;
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;  
+    display: inline-flex;
+}
+
+.show{
+    display: block;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    margin: 10px;
+    font-size: large;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Yeonsung';
+    text-align: center;
+    border-radius : 25px;
+    font-size:larger;
+    display: inline-block;
+}
+
+.buttons{
+    background-color: white; 
+    width: max-content;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin:0 auto;
+}
+
+.btn:hover{
+    text-decoration: underline;
+}
+
+.btn:focus{
+    background-color: rgb(86, 143, 250);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.name{
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 9px;
+    font-family: 'Yeonsung';
+    font-size:larger;
+}
+
+.round {
+    background-color: black;
+    color: white;
+    padding: 1%;
+    margin : 35% 35%;
+    font-family: 'Yeonsung';
+    font-size: larger;
+}
